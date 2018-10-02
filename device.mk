@@ -15,6 +15,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Inherit from sm6115-common
 $(call inherit-product, device/xiaomi/sm6115-common/bengal.mk)
 
