@@ -281,8 +281,8 @@ vendor/lib64/com.qti.feature2.serializer.so
 vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 
-# Camera (postprocessing)
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+# Camera (postprocessing) - patched
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|28831e0b97d2447d905c660db9e930475768bd13
 
 # Camera (sensors)
 vendor/lib/libmmcamera_cac3.so
