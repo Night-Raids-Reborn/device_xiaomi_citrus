@@ -4,6 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit from sm6115-common
+$(call inherit-product, device/xiaomi/sm6115-common/bengal.mk)
+
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/xiaomi/citrus/citrus-vendor.mk)
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
@@ -18,9 +24,3 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Inherit from sm6115-common
-$(call inherit-product, device/xiaomi/sm6115-common/bengal.mk)
-
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/citrus/citrus-vendor.mk)
