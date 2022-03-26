@@ -10,6 +10,10 @@ $(call inherit-product, device/xiaomi/sm6115-common/bengal.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/citrus/citrus-vendor.mk)
 
+# Camera
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
