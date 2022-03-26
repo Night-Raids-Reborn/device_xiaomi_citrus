@@ -18,6 +18,10 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Camera
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Configuration files
 include $(LOCAL_PATH)/audio/audio.mk
 
