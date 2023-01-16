@@ -152,6 +152,12 @@ vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/com.vidhance.node.processing.so
 
 # Camera (configs)
+vendor/etc/camera/model/bokeh_model/cache_data
+vendor/etc/camera/model/bokeh_model/model_mdl_cache
+vendor/etc/camera/model/bokeh_model/segment_model
+vendor/etc/camera/model/rt_model/cache_data
+vendor/etc/camera/model/rt_model/model_mdl_cache
+vendor/etc/camera/model/rt_model/segment_model
 vendor/etc/camera/102_SummerDay.png
 vendor/etc/camera/103_Fantasy.png
 vendor/etc/camera/104_Meet.png
@@ -181,12 +187,6 @@ vendor/etc/camera/male_bg.png
 vendor/etc/camera/male_icon.png
 vendor/etc/camera/mibokeh_712_opencl.bin
 vendor/etc/camera/mibokeh_712_parameter.bin
-vendor/etc/camera/model/bokeh_model/cache_data
-vendor/etc/camera/model/bokeh_model/model_mdl_cache
-vendor/etc/camera/model/bokeh_model/segment_model
-vendor/etc/camera/model/rt_model/cache_data
-vendor/etc/camera/model/rt_model/model_mdl_cache
-vendor/etc/camera/model/rt_model/segment_model
 vendor/etc/camera/morpho_lowlight5.0_algoup.xml
 vendor/etc/camera/score_bg.png
 vendor/etc/camera/score_icon.png
