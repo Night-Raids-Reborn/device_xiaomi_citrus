@@ -59,7 +59,7 @@ vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libdng_sdk2vendor.so
 vendor/lib64/libft2vendor.so
-vendor/lib64/libicuuc.so
+vendor/lib64/libicuucts.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
