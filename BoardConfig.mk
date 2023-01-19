@@ -19,8 +19,5 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_citrus
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_citrus
 
-# Kernel
-TARGET_KERNEL_CONFIG := vendor/citrus_defconfig
-
 # Inherit from the proprietary version
 include vendor/xiaomi/citrus/BoardConfigVendor.mk
