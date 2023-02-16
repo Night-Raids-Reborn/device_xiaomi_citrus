@@ -36,6 +36,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    ApertureCitrus \
     FrameworksResTarget \
     SettingsProviderResTarget \
     SystemUIResTarget \
