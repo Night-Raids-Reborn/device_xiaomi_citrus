@@ -15,5 +15,10 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Kernel
+BOARD_PREBUILT_DTBOIMAGE := $(COMMON_PATH)-kernel/citrus/dtbo.img
+TARGET_PREBUILT_DTB := $(COMMON_PATH)-kernel/citrus/dtb.img
+BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+
 # Inherit from the proprietary version
 include vendor/xiaomi/citrus/BoardConfigVendor.mk
