@@ -15,6 +15,10 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_citrus
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_citrus
+
 # Kernel
 BOARD_PREBUILT_DTBOIMAGE := $(COMMON_PATH)-kernel/citrus/dtbo.img
 TARGET_PREBUILT_DTB := $(COMMON_PATH)-kernel/citrus/dtb.img

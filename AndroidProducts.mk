@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/statix_citrus.mk
+    $(LOCAL_DIR)/lineage_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
-    statix_citrus-user \
-    statix_citrus-userdebug \
-    statix_citrus-eng
+    lineage_citrus-user \
+    lineage_citrus-userdebug \
+    lineage_citrus-eng
