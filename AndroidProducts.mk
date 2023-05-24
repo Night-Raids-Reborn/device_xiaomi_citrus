@@ -10,4 +10,7 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
     lineage_citrus-user \
     lineage_citrus-userdebug \
-    lineage_citrus-eng
+    lineage_citrus-eng \
+    spark_citrus-user \
+    spark_citrus-userdebug \
+    spark_citrus-eng
