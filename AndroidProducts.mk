@@ -5,7 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_citrus.mk
+    $(LOCAL_DIR)/lineage_citrus.mk \
+    $(LOCAL_DIR)/spark_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_citrus-user \
