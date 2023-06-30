@@ -6,3 +6,6 @@
 
 # Inherit from Xiaomi Minerva
 $(call inherit-product, device/xiaomi/minerva/device-common.mk)
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 29
