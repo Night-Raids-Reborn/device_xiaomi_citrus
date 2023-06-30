@@ -18,6 +18,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Configuration files
+include $(LOCAL_PATH)/audio/audio.mk
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
