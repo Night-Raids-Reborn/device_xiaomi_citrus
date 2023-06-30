@@ -5,3 +5,6 @@
 #
 
 DEVICE_PATH := device/xiaomi/citrus
+
+# Board
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
