@@ -24,3 +24,6 @@ PRODUCT_PACKAGES += \
     SettingsProviderResTarget \
     SystemUIResTarget \
     WifiResTarget
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/xiaomi/citrus/citrus-vendor.mk)
