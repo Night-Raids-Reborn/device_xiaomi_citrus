@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Enable AOSP recovery flashing
+TARGET_USES_AOSP_RECOVERY := true
+
 # Inherit from citrus device
 $(call inherit-product, device/xiaomi/citrus/device.mk)
 
