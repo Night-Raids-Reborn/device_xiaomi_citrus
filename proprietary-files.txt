@@ -369,9 +369,9 @@ vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.xiaomi
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.xiaomi.rc
 vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
 vendor/etc/permissions/com.fingerprints.extension.xml
 -vendor/framework/com.fingerprints.extension.jar
