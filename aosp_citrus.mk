@@ -14,6 +14,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Enable AOSP recovery flashing
 TARGET_USES_AOSP_RECOVERY := true
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit from citrus device
 $(call inherit-product, device/xiaomi/citrus/device.mk)
 
