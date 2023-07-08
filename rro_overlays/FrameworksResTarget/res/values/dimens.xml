@@ -23,7 +23,7 @@
          -->
     <dimen name="status_bar_height_default">28dp</dimen>
     <dimen name="status_bar_height_landscape">28dp</dimen>
-    <dimen name="status_bar_height_portrait">93.0px</dimen>
+    <dimen name="status_bar_height_portrait">104.0px</dimen>
 
     <!-- rounded corner content padding -->
     <dimen name="rounded_corner_content_padding">47.0px</dimen>
