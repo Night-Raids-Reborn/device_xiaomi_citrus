@@ -7,7 +7,7 @@
 cc_library_static {
     name: "init_xiaomi_citrus",
     srcs: ["init_xiaomi_citrus.cpp"],
-    whole_static_libs: ["//device/xiaomi/minerva:libinit_xiaomi_minerva"],
+    whole_static_libs: ["//device/xiaomi/sm6115-common:libinit_xiaomi_bengal"],
     include_dirs: ["system/core/init"],
     recovery_available: true,
 }
