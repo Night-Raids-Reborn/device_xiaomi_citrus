@@ -8,7 +8,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_citrus.mk \
     $(LOCAL_DIR)/lineage_citrus.mk \
     $(LOCAL_DIR)/nad_citrus.mk \
-    $(LOCAL_DIR)/havoc_citrus.mk
+    $(LOCAL_DIR)/havoc_citrus.mk \
+    $(LOCAL_DIR)/blaze_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_citrus-user \
@@ -22,4 +23,7 @@ COMMON_LUNCH_CHOICES := \
     nad_citrus-eng \
     havoc_citrus-user \
     havoc_citrus-userdebug \
-    havoc_citrus-eng
+    havoc_citrus-eng \
+    blaze_citrus-user \
+    blaze_citrus-userdebug \
+    blaze_citrus-eng
