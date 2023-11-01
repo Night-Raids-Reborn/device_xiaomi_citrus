@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2023 The Minerva's Dome.
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,19 +8,28 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common lineage stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+# Inherit some common Evolution-X stuff
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+
+# Enable lineage recovery flashing
+TARGET_USES_lineage_RECOVERY := true
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from citrus device
 $(call inherit-product, device/xiaomi/citrus/device.mk)
 
-PRODUCT_NAME := blaze_citrus
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := evolution_citrus
 PRODUCT_DEVICE := citrus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
-PRODUCT_MODEL := M2010J19CG
+PRODUCT_MODEL := POCO M3
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+BUILD_FINGERPRINT := POCO/citrus_global/citrus:12/RKQ1.211130.001/V13.0.3.0.SJFMIXM:user/release-keys
 
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
@@ -28,16 +37,8 @@ TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_USE_PIXEL_FINGERPRINT := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-WITH_GMS := false
-WITH_GAPPS := false
+WITH_GMS := true
 TARGET_CORE_GMS := false
-USE_PIXEL_CHARGING := true
-TARGET_USE_PIXEL_CHARGER := true
-TARGET_USES_BLUR := false
-TARGET_SUPPORTS_BLUR := false
-BLAZE_MAINTAINER := Darknius
-TARGET_BOOT_ANIMATION_RES := 1080
 
-# Face Unlock
+# # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
