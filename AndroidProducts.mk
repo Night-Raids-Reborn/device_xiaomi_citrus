@@ -26,4 +26,7 @@ COMMON_LUNCH_CHOICES := \
     havoc_citrus-eng \
     blaze_citrus-user \
     blaze_citrus-userdebug \
-    blaze_citrus-eng
+    blaze_citrus-eng \
+    evolution_citrus-user \
+    evolution_citrus-userdebug \
+    evolution_citrus-eng
