@@ -11,7 +11,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/havoc_citrus.mk \
     $(LOCAL_DIR)/blaze_citrus.mk \
     $(LOCAL_DIR)/evolution_citrus.mk \
-    $(LOCAL_DIR)/cherish_citrus.mk
+    $(LOCAL_DIR)/cherish_citrus.mk \
+    $(LOCAL_DIR)/spark_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_citrus-user \
@@ -34,5 +35,8 @@ COMMON_LUNCH_CHOICES := \
     evolution_citrus-eng \
     cherish_citrus-user \
     cherish_citrus-userdebug \
-    cherish_citrus-eng
+    cherish_citrus-eng \
+    spark_citrus-user \
+    spark_citrus-userdebug \
+    spark_citrus-eng
 
