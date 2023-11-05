@@ -12,7 +12,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/blaze_citrus.mk \
     $(LOCAL_DIR)/evolution_citrus.mk \
     $(LOCAL_DIR)/cherish_citrus.mk \
-    $(LOCAL_DIR)/spark_citrus.mk
+    $(LOCAL_DIR)/spark_citrus.mk \
+    $(LOCAL_DIR)/derp_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_citrus-user \
@@ -38,5 +39,8 @@ COMMON_LUNCH_CHOICES := \
     cherish_citrus-eng \
     spark_citrus-user \
     spark_citrus-userdebug \
-    spark_citrus-eng
+    spark_citrus-eng \
+    derp_citrus-userdebug \
+    derp_citrus-eng \
+    derp_citrus-user
 
