@@ -42,5 +42,8 @@ COMMON_LUNCH_CHOICES := \
     spark_citrus-eng \
     derp_citrus-userdebug \
     derp_citrus-eng \
-    derp_citrus-user
+    derp_citrus-user \
+    cipher_citrus-userdebug \
+    cipher_citrus-eng \
+    cipher_citrus-user
 
