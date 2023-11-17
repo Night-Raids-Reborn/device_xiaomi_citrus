@@ -13,7 +13,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/evolution_citrus.mk \
     $(LOCAL_DIR)/cherish_citrus.mk \
     $(LOCAL_DIR)/spark_citrus.mk \
-    $(LOCAL_DIR)/derp_citrus.mk
+    $(LOCAL_DIR)/derp_citrus.mk \
+    $(LOCAL_DIR)/cipher_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_citrus-user \
