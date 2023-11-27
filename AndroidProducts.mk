@@ -45,5 +45,8 @@ COMMON_LUNCH_CHOICES := \
     derp_citrus-user \
     cipher_citrus-userdebug \
     cipher_citrus-eng \
-    cipher_citrus-user
+    cipher_citrus-user \
+    afterlife_citrus-userdebug \
+    afterlife_citrus-eng \
+    afterlife_citrus-user
 
