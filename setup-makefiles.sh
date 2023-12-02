@@ -8,7 +8,7 @@
 set -e
 
 export DEVICE=citrus
-export DEVICE_COMMON=sm6115-common
+export DEVICE_COMMON=bengal
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"

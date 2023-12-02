@@ -26,20 +26,15 @@ PRODUCT_MODEL := POCO M3
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := POCO/citrus_global/citrus:12/RKQ1.211130.001/V13.0.3.0.SJFMIXM:user/release-keys
-
-# Pixel customization
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_USE_PIXEL_FINGERPRINT := true
-TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GMS := true
-USE_GAPPS ?= true
-USE_PIXEL_CHARGING := true
+# Inherit some common NusantaraProject stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 TARGET_USES_BLUR := false
-
-# # Face Unlock
+USE_PIXEL_CHARGING := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := false
+USE_LAWNCHAIR := true
+NAD_BUILD_TYPE := FORK
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 NAD_BUILD_TYPE ?= CUSTOM
