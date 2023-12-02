@@ -5,7 +5,7 @@
 #
 
 # Inherit from Xiaomi SM6115
-$(call inherit-product, device/xiaomi/bengal/bengal.mk)
+$(call inherit-product, device/xiaomi/chime/chime.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
