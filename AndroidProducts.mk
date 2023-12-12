@@ -15,7 +15,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/spark_citrus.mk \
     $(LOCAL_DIR)/derp_citrus.mk \
     $(LOCAL_DIR)/cipher_citrus.mk \
-    $(LOCAL_DIR)/voltage_citrus.mk
+    $(LOCAL_DIR)/voltage_citrus.mk \
+    $(LOCAL_DIR)/blackiron_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_citrus-user \
@@ -50,5 +51,8 @@ COMMON_LUNCH_CHOICES := \
     cipher_citrus-user \
     voltage_citrus-userdebug \
     voltage_citrus-eng \
-    voltage_citrus-user
+    voltage_citrus-user \
+    blackiron_citrus-userdebug \
+    blackiron_citrus-eng \
+    blackiron_citrus-user
 
