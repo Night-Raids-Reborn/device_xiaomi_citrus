@@ -14,9 +14,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureCitrus \
-    FrameworksResTarget \
     SettingsProviderResTarget \
-    SystemUIResTarget \
     WifiResTarget
 
 # Inherit the proprietary files
