@@ -16,7 +16,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/derp_citrus.mk \
     $(LOCAL_DIR)/cipher_citrus.mk \
     $(LOCAL_DIR)/voltage_citrus.mk \
-    $(LOCAL_DIR)/blackiron_citrus.mk
+    $(LOCAL_DIR)/blackiron_citrus.mk \
+    $(LOCAL_DIR)/citrus.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_citrus-user \
@@ -54,5 +55,8 @@ COMMON_LUNCH_CHOICES := \
     voltage_citrus-user \
     blackiron_citrus-userdebug \
     blackiron_citrus-eng \
-    blackiron_citrus-user
+    blackiron_citrus-user \
+    citrus-userdebug \
+    citrus-eng \
+    citrus-user
 
