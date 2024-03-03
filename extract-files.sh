@@ -1,21 +1,18 @@
 #!/bin/bash
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib64/camera/components/com.qti.node.mialgocontrol.so)
-            llvm-strip --strip-debug "${2}"
-            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
-            ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             "${SIGSCAN}" -p "13 0A 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
-        vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.xiaomi.rc)
-            sed -i 's|android.hardware.biometrics.fingerprint@2.1-service|android.hardware.biometrics.fingerprint@2.1-service.xiaomi|g' "${2}"
+        vendor/lib64/camera/components/com.qti.node.mialgocontrol.so)
+            llvm-strip --strip-debug  "${2}"
+            grep -q "libpiex_shim.so" "${2}" || ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
             ;;
     esac
 }

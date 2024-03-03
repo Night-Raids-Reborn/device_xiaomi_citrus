@@ -1,30 +1,55 @@
+# Copyright (C) 2023 Paranoid Android
 #
-# Copyright (C) 2023 The Minerva's Dome.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
 #
-# SPDX-License-Identifier: Apache-2.0
+#      http://www.apache.org/licenses/LICENSE-2.0
 #
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
 DEVICE_PATH := device/xiaomi/citrus
 
-# Inherit from Xiaomi SM6115
-include device/xiaomi/sm6115-common/BoardConfigCommon.mk
-
-# Board
+# Board Info
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
-# Display
-TARGET_SCREEN_DENSITY := 440
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
-# Kernel
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/xiaomi_framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/xiaomi_manifest.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_citrus
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_citrus
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_citrus
+TARGET_RECOVERY_DEVICE_MODULES := libinit_citrus
 
-# Inherit the proprietary files
+# Kernel
+BOARD_MKBOOTIMG_ARGS += --dtb $(DEVICE_PATH)-kernel/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
+
+KERNEL_DEFCONFIG := vendor/bengal-perf_defconfig
+
+KERNEL_LLVM_SUPPORT := true
+
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := citrus
+
+# Partitions
+BOARD_SUPER_PARTITION_SIZE := 8589934592
+BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product system_ext
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 8585740288
+
+# Screen density
+TARGET_SCREEN_DENSITY := 440
+
+# Inherit from the proprietary version
 include vendor/xiaomi/citrus/BoardConfigVendor.mk
+
+# Inherit from sm6115-common
+include device/xiaomi/sm6115-common/BoardConfigCommon.mk
