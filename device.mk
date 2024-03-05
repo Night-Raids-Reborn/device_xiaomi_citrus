@@ -5,7 +5,7 @@
 #
 
 # Inherit from Xiaomi bengal
-$(call inherit-product, device/xiaomi/bengal/device-bengal.mk)
+$(call inherit-product, device/xiaomi/sm6115-common/device.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -13,9 +13,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureCitrus \
-    SettingsProviderResTarget \
-    WifiResTarget
+    ApertureCitrus
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/citrus/citrus-vendor.mk)

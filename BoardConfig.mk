@@ -7,7 +7,7 @@
 DEVICE_PATH := device/xiaomi/citrus
 
 # Inherit from Xiaomi bengal
-include device/xiaomi/bengal/BoardConfig-bengal.mk
+include device/xiaomi/sm6115-common/BoardConfig.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := citrus,bengal,juice,chime
