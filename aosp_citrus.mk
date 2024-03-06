@@ -17,6 +17,15 @@ TARGET_USES_AOSP_RECOVERY := true
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Pixel customization
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
+TARGET_CORE_GMS := false
+
 # Inherit from citrus device
 $(call inherit-product, device/xiaomi/citrus/device.mk)
 
