@@ -39,9 +39,14 @@ TARGET_SUPPORTS_BLUR := false
 TARGET_BOOT_ANIMATION_RES := 1080
 CHERISH_VANILLA := true
 
+# Cherish props
+CHERISH_MAINTAINER := Darknius_#FreePalestine
+CHERISH_CHIPSET := Bengal
+CHERISH_BATTERY := 6000mAh
+CHERISH_DISPLAY := 1080x2340
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=Darknius
+    ro.cherish.maintainer=Darknius_#FreePalestine
