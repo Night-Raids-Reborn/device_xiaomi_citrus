@@ -30,5 +30,8 @@ PRODUCT_PACKAGES += \
     SystemUIResTarget \
     WifiResTarget
 
+#FP
+BUILD_FINGERPRINT := POCO/citrus_id/citrus:12/RKQ1.211130.001/V14.0.2.0.SJFIDXM:user/release-keys
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/citrus/citrus-vendor.mk)
