@@ -15,7 +15,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/spark_citrus.mk \
     $(LOCAL_DIR)/derp_citrus.mk \
     $(LOCAL_DIR)/cipher_citrus.mk \
-    $(LOCAL_DIR)/afterlife_citrus.mk
+    $(LOCAL_DIR)/afterlife_citrus.mk \
+    $(LOCAL_DIR)/banana_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_citrus-user \
@@ -50,5 +51,8 @@ COMMON_LUNCH_CHOICES := \
     cipher_citrus-user \
     afterlife_citrus-userdebug \
     afterlife_citrus-eng \
-    afterlife_citrus-user
+    afterlife_citrus-user \
+    banana_citrus-eng \
+    banana_citrus-userdebug \
+    banana_citrus-user
 
