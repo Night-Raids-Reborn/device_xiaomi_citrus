@@ -24,5 +24,8 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_citrus
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_citrus
 
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := citrus,chime,juice
+
 # Inherit the proprietary files
 include vendor/xiaomi/citrus/BoardConfigVendor.mk
