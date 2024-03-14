@@ -17,7 +17,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cipher_citrus.mk \
     $(LOCAL_DIR)/afterlife_citrus.mk \
     $(LOCAL_DIR)/banana_citrus.mk \
-    $(LOCAL_DIR)/pixelstar_citrus.mk
+    $(LOCAL_DIR)/pixelstar_citrus.mk \
+    $(LOCAL_DIR)/bliss_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_citrus-user \
@@ -58,5 +59,8 @@ COMMON_LUNCH_CHOICES := \
     banana_citrus-user \
     pixelstar_citrus-user \
     pixelstar_citrus-userdebug \
-    pixelstar_citrus-eng
+    pixelstar_citrus-eng \
+    bliss_citrus-user \
+    bliss_citrus-userdebug \
+    bliss_citrus-eng
 
