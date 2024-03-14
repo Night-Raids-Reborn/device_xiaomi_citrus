@@ -24,6 +24,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_USE_PIXEL_FINGERPRINT := true
 TARGET_SUPPORTS_QUICK_TAP := true
 WITH_GMS := true
+WITH_GAPPS := true
 TARGET_CORE_GMS := false
 
 # Inherit from citrus device
