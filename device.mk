@@ -34,6 +34,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+#FP
+BUILD_FINGERPRINT := POCO/citrus_id/citrus:12/RKQ1.211130.001/V14.0.2.0.SJFIDXM:user/release-keys
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureCitrus \

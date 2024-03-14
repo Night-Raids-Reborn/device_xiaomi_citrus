@@ -17,7 +17,7 @@ static const variant_info_t citrus_info = {
     .device = "citrus",
     .marketname = "POCO M3",
     .model = "M2010J19CG",
-    .build_fingerprint = "POCO/citrus_global/citrus:12/RKQ1.211130.001/V13.0.3.0.SJFMIXM:user/release-keys",
+    .build_fingerprint = "POCO/citrus_id/citrus:12/RKQ1.211130.001/V14.0.2.0.SJFIDXM:user/release-keys",
 };
 
 static const std::vector<variant_info_t> variants = {

@@ -29,8 +29,6 @@ PRODUCT_MODEL := POCO M3
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := POCO/citrus_global/citrus:12/RKQ1.211130.001/V13.0.3.0.SJFMIXM:user/release-keys
-
 RISING_CHIPSET := "Snapdragon 662"
 RISING_MAINTAINER := "Darknius"
 
